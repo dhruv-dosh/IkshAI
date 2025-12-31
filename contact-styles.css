@@ -1,0 +1,217 @@
+/* Contact Page Specific Styles */
+
+.contact-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    /* Align to bottom */
+    justify-content: flex-end;
+    /* Align to right */
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.contact-card {
+    background: rgba(20, 20, 20, 0.6);
+    /* Darker glass */
+    width: 100%;
+    max-width: 650px;
+    /* Increased Width */
+    padding: 1.5rem 2.5rem;
+    /* Reduced vertical padding, kept horizontal */
+    border-radius: 0;
+    border-top-left-radius: 20px;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    box-shadow: -10px -10px 40px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s ease;
+    transform: translateX(0);
+    opacity: 1;
+    position: fixed;
+    /* Changed to fixed for about page popup */
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+/* Blur Overlay */
+.contact-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    /* Slight dim */
+    backdrop-filter: blur(8px);
+    /* The blur effect */
+    z-index: 999;
+    /* Below card (1000) but above everything else */
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    pointer-events: auto;
+}
+
+.contact-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.contact-card.hidden {
+    transform: translateX(110%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.close-btn {
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+    /* Adjusted left */
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #ffffff;
+}
+
+.contact-header {
+    text-align: left;
+    margin-bottom: 1rem;
+    /* Compact margin */
+    margin-top: 1.5rem;
+    /* Reduced top space */
+}
+
+.pre-header {
+    font-size: 0.75rem !important;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.8) !important;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+}
+
+.contact-header h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    /* Reduced font size */
+    font-weight: 600;
+    margin-bottom: 0;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+}
+
+.contact-header p {
+    display: none;
+}
+
+/* Animation */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* Computed gap */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    text-align: left;
+}
+
+.form-group label {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-left: 0.25rem;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    /* Compact padding */
+    background: rgba(255, 255, 255, 0.05);
+    /* Slightly clearer */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    /* Sharper corners */
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.form-textarea {
+    min-height: 50px;
+    /* Reduced min-height */
+    max-height: 80px;
+    resize: vertical;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.05);
+}
+
+.submit-btn {
+    margin-top: 0.5rem;
+    padding: 1rem;
+    background: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

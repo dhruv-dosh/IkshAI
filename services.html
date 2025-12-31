@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - IKSH AI</title>
+    <meta name="description"
+        content="Explore the AI solutions offered by IKSH AI - from customer support automation to operational efficiency tools.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="service-style.css">
+    <link rel="stylesheet" href="contact-styles.css">
+</head>
+
+<body>
+    <!-- Animated Background Blobs -->
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Video Background -->
+    <div class="page-background">
+        <video class="background-video" autoplay muted loop playsinline>
+            <source src="images/hero-video3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="background-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar full-width" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/flag-white.gif" alt="IKSH AI">
+            </a>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUTUS</a></li>
+                <li><a href="#" id="navContactLink">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="service-scroll-container">
+        <!-- Spacer for center alignment start -->
+        <div class="scroll-spacer"></div>
+
+        <div class="service-item">
+            <div class="service-content">
+                <h2>AI Powered Customer Support</h2>
+                <p>We provide AI-powered customer support solutions that handle customer queries instantly, reduce
+                    response time, and ensure consistent, high-quality support across digital channels.</p>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-content">
+                <h2>AI-Based Appointment Scheduling</h2>
+                <p>Our AI-driven appointment scheduling solutions automate bookings, confirmations, and rescheduling,
+                    helping businesses manage appointments efficiently while improving customer convenience.</p>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-content">
+                <h2>AI-Integrated Custom Software</h2>
+                <p>We develop custom software solutions integrated with AI to automate workflows, enhance
+                    decision-making, and solve specific business challenges through intelligent applications.</p>
+            </div>
+        </div>
+
+        <div class="service-item">
+            <div class="service-content">
+                <h2>AI-Powered Chatbots</h2>
+                <p>We provide AI-powered Chatbot solutions that handle customer queries instantly, reduce response time,
+                    and ensure consistent, high-quality support across digital channels.</p>
+            </div>
+        </div>
+
+        <!-- Spacer for center alignment end -->
+        <div class="scroll-spacer"></div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Blur Overlay -->
+    <div class="contact-overlay hidden" id="contactOverlay"></div>
+
+    <!-- Embedded Contact Form -->
+    <div class="contact-card hidden" id="contactCard">
+        <a href="#" class="close-btn" id="closeContact">&times; CLOSE</a>
+        <div class="contact-header">
+            <p class="pre-header">READY TO RALLY?</p>
+            <h2>Partner with IKSH AI<br>to shape what's next.</h2>
+        </div>
+        <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+            <!-- Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="bea16f2c-da88-4970-bd16-cc983d4b9a37">
+            <input type="hidden" name="subject" value="New Contact Form Submission from IKSH AI Website">
+            <input type="hidden" name="from_name" value="IKSH AI Website">
+            <input type="hidden" name="redirect" value="false">
+
+            <div class="form-row" style="display: flex; gap: 1rem;">
+                <div class="form-group" style="flex: 1;">
+                    <input type="text" id="firstName" name="first_name" class="form-input" required
+                        placeholder="First Name">
+                </div>
+                <div class="form-group" style="flex: 1;">
+                    <input type="text" id="lastName" name="last_name" class="form-input" required
+                        placeholder="Last Name">
+                </div>
+            </div>
+
+            <div class="form-row" style="display: flex; gap: 1rem;">
+                <div class="form-group" style="flex: 1;">
+                    <input type="text" id="company" name="company" class="form-input" placeholder="Company Name">
+                </div>
+
+                <div class="form-group" style="flex: 1;">
+                    <input type="email" id="email" name="email" class="form-input" required
+                        placeholder="name@company.com">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <textarea id="message" name="message" class="form-textarea" required
+                    placeholder="How can we help?"></textarea>
+            </div>
+            <button type="submit" class="submit-btn btn-submit">Send Message</button>
+            <div id="formMessage" style="margin-top: 0.5rem; color: white;"></div>
+
+            <div class="contact-footer-info"
+                style="margin-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 0.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; align-items: center;">
+                <p style="color: rgba(255,255,255,0.6); font-size: 0.8rem; margin: 0;">
+                    <b>PHONE :</b> 9111518233, 9589759293.
+                </p>
+                <p style="color: rgba(255,255,255,0.6); font-size: 0.8rem; margin: 0;">
+                    <b>MAIL :</b> Iksh.AI.Tech@gmail.com
+                </p>
+                <a href="https://www.linkedin.com/company/ikshai/" target="_blank"
+                    style="color: rgba(255,255,255,0.8); font-size: 1.2rem; font-weight: bold; text-decoration: none; margin: 0; line-height: 1;">
+                    in
+                </a>
+            </div>
+        </form>
+    </div>
+
+    <div class="copyright-footer">
+        &copy; 2025 IKSH AI. All rights reserved.
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+/* Services Page Specific Styles */
+
+.service-hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+}
+
+.service-hero-content {
+    max-width: 900px;
+    text-align: left;
+}
+
+.service-hero-title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+    margin-bottom: 2rem;
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.service-hero-intro {
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 2rem;
+}
+
+.service section {
+    position: relative;
+    z-index: 1;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.service-card {
+    background: rgba(0, 0, 0, 0.986);
+    padding: 2.5rem;
+    border-radius: 16px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.2);
+    background-color: black;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.service-card p {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 6rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.cta-content {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.01);
+    padding: 4rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.cta-content h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+}
+
+.cta-content .btn {
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.cta-content .btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Navbar Logo Override */
+.navbar .logo img {
+    height: 50px;
+}
+
+/* Override Navbar Scroll Transparency for Services Page */
+.navbar.scrolled {
+    background: rgba(0, 0, 0, 0.4) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* Horizontal Service Scroll Styles */
+.service-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    gap: 2rem;
+    padding: 0 50vw;
+    /* Padding to allow first/last items to be centered */
+    width: 100%;
+    height: 100vh;
+    /* Full viewport height */
+    align-items: center;
+    /* Vertically center items */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.service-scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.service-item {
+    min-width: 450px;
+    max-width: 500px;
+    flex-shrink: 0;
+    align-self: center;
+    scroll-snap-align: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0.5;
+    padding: 3rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.service-item.active {
+    transform: scale(1.08);
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.service-item h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    word-wrap: break-word;
+    color: #ffffff;
+    letter-spacing: -0.02em;
+}
+
+.service-item p {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .service-item {
+        min-width: 320px;
+        max-width: 350px;
+        padding: 2rem;
+    }
+
+    .service-item.active {
+        transform: scale(1.03);
+    }
+}
+
+@media (max-width: 480px) {
+    .service-scroll-container {
+        padding: 2rem 1rem;
+    }
+
+    .service-item {
+        min-width: 280px;
+        max-width: 300px;
+        padding: 1.5rem;
+    }
+}

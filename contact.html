@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - IKSH AI</title>
+    <meta name="description" content="Get in touch with IKSH AI. We'd love to hear from you.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about-styles.css">
+    <link rel="stylesheet" href="contact-styles.css">
+</head>
+
+<body>
+    <!-- Animated Background Blobs -->
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Video Background -->
+    <div class="page-background">
+        <video class="background-video" autoplay muted loop playsinline>
+            <source src="images/hero-video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="background-overlay"></div>
+    </div>
+
+    <!-- Navigation Removed -->
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-card">
+            <a href="index.html" class="close-btn">&times; CLOSE</a>
+            <div class="contact-header">
+                <p class="pre-header">READY TO RALLY?</p>
+                <h2>Partner with IKSH AI<br>to shape what's next.</h2>
+            </div>
+            <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                <!-- Web3Forms Access Key -->
+                <input type="hidden" name="access_key" value="bea16f2c-da88-4970-bd16-cc983d4b9a37">
+                <input type="hidden" name="subject" value="New Contact Form Submission from IKSH AI Website">
+                <input type="hidden" name="from_name" value="IKSH AI Website">
+                <input type="hidden" name="redirect" value="false">
+
+                <div class="form-row" style="display: flex; gap: 1rem;">
+                    <div class="form-group" style="flex: 1;">
+                        <input type="text" id="firstName" name="first_name" class="form-input" required
+                            placeholder="First Name">
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <input type="text" id="lastName" name="last_name" class="form-input" required
+                            placeholder="Last Name">
+                    </div>
+                </div>
+
+                <div class="form-row" style="display: flex; gap: 1rem;">
+                    <div class="form-group" style="flex: 1;">
+                        <input type="text" id="company" name="company" class="form-input" placeholder="Company Name">
+                    </div>
+
+                    <div class="form-group" style="flex: 1;">
+                        <input type="email" id="email" name="email" class="form-input" required
+                            placeholder="name@company.com">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <textarea id="message" name="message" class="form-textarea" required
+                        placeholder="How can we help?"></textarea>
+                </div>
+                <button type="submit" class="submit-btn btn-submit">Send Message</button>
+                <div id="formMessage" style="margin-top: 1rem; color: white;"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Bottom Left Branding (Fixed) -->
+    <a href="index.html" class="about-branding-text">
+        <img src="images/logo.png" alt="IKSH AI Logo">
+        <span>IKSH AI</span>
+    </a>
+
+    <!-- Message Button (Fixed Bottom Right) -->
+    <a href="contact.html" class="about-message-button" aria-label="Contact us">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
