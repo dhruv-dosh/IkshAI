@@ -1653,10 +1653,7 @@ body {
     }
 
     .hero-tagline {
-        bottom: 4rem;
-        font-size: 0.9rem;
-        width: 100%;
-        padding: 0 1rem;
+        display: none !important;
     }
 
     /* Copyright Footer */
@@ -1673,24 +1670,3 @@ body {
         width: 100%;
         text-align: center;
     }
-}
-
-@media (max-width: 768px) {
-    .hero-motto {
-        top: 18% !important;
-    }
-
-    .hero-content {
-        margin-top: -6rem !important;
-    }
-
-    /* Hero Responsive Fixes - Clean Layout (Defensive) */
-    .hero-branding,
-    .hero-phone,
-    .corner-counter,
-    .message-button,
-    .linkedin-button,
-    .index-nav .mobile-toggle {
-        display: none !important;
-    }
-}
