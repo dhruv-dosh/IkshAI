@@ -128,9 +128,10 @@
 
 /* Navbar Logo Override for About Page */
 /* Navbar Logo Override for About Page */
-.navbar .logo img {
+/* Navbar Logo Override for About Page - Removed to match Index Page */
+/* .navbar .logo img {
     height: 50px;
-}
+} */
 
 /* Magnifying Glass Lens */
 /* .magnifier-lens {
@@ -219,7 +220,7 @@
 }
 
 .about-branding-text span {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     /* Reduced size */
     font-weight: 800;
     letter-spacing: -0.02em;
