@@ -129,9 +129,9 @@
 /* Navbar Logo Override for About Page */
 /* Navbar Logo Override for About Page */
 /* Navbar Logo Override for About Page - Removed to match Index Page */
-/* .navbar .logo img {
-    height: 50px;
-} */
+.navbar .logo img {
+    height: 35px;
+}
 
 /* Magnifying Glass Lens */
 /* .magnifier-lens {
@@ -214,7 +214,7 @@
 }
 
 .about-branding-text img {
-    height: 30px;
+    height: 50px;
     /* Adjust logo size */
     width: auto;
 }
