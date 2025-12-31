@@ -85,13 +85,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Home Page Scaling (Reduce by 1/3) - Desktop Only */
-@media (min-width: 769px) {
-    html.home-scale {
-        font-size: 66.66%;
-    }
-}
-
 /* ============================================
    Animated Background Blobs
    ============================================ */
