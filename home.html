@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - IKSH AI</title>
+    <title>Home - IKSH AI</title>
     <meta name="description"
         content="Learn about IKSH AI - a technology-driven startup focused on building practical AI-powered solutions for businesses.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="about-styles.css">
+    <link rel="stylesheet" href="home-styles.css">
     <link rel="stylesheet" href="contact-styles.css">
 </head>
 
@@ -27,7 +27,7 @@
     <!-- Video Background -->
     <div class="page-background">
         <video class="background-video" autoplay muted loop playsinline>
-            <source src="images/hero-video1.mp4" type="video/mp4">
+            <source src="images/hero-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="background-overlay"></div>
@@ -37,18 +37,26 @@
     <nav class="navbar full-width" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <img src="images/logo.png" alt="IKSH AI">
+                <span id="navbarDate" style="color: white; font-weight: 700; font-size: 5rem;"></span>
             </a>
             <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="home.html">HOME</a></li>
-                <li><a href="services.html">SERVICES</a></li>
-                <li><a href="#" id="navContactLink">CONTACT</a></li>
-            </ul>
+            <!-- Navbar Center Text Aligned with Hero Container -->
+            <div class="navbar-center-container"
+                style="position: absolute; left: 0; width: 100%; height: 100%; top: 0; display: flex; justify-content: center; pointer-events: none;">
+                <div
+                    style="width: 100%; max-width: 900px; padding: 0 2rem; display: flex; align-items: center; height: 100%;">
+                    <span class="navbar-center-text"
+                        style="color: white; font-weight: 700; font-size: 1.5rem; white-space: nowrap; display: flex; align-items: center; gap: 10px; pointer-events: auto;">
+                        <img src="images/logo.png" alt="IKSH AI" style="height: 30px; width: auto;">
+                        The Name Of Trust
+                    </span>
+                </div>
+            </div>
+            <span id="navbarYear" style="color: white; font-weight: 700; font-size: 5rem; margin-left: auto;"></span>
         </div>
     </nav>
 
@@ -56,18 +64,15 @@
     <section class="about-hero">
         <div class="container">
             <div class="about-hero-content">
-                <span class="section-label animate-in">WHO WE ARE</span>
-                <h1 class="about-hero-title animate-in">We Help You <br>Achieve More.</h1>
-                <p class="about-hero-intro animate-in">
-                    IKSH AI is a technology driven startup building practical, easy to adopt AI solutions for
-                    businesses. We help organizations automate workflows, boost efficiency, and improve customer
-                    experiences. Starting with AI powered customer support, our vision is to expand into a full suite of
-                    AI tools across operations, sales, and customer engagement delivering simple, reliable, and
-                    measurable business impact.
-                </p>
+                <h1 class="about-hero-title animate-in"
+                    style="font-weight: 400; font-size: clamp(1.75rem, 3.5vw, 3rem); text-transform: none;">
+                    <b>IKSH AI</b> helps businesses improve customer interactions through AI powered support solutions
+                    that integrate seamlessly with operations, enabling faster responses, consistent communication, and
+                    scalable growth.
+                </h1>
                 <div style="margin-top: 2rem;">
-                    <a href="services.html" class="motto-link animate-in">
-                        Explore Services →
+                    <a href="about.html" class="motto-link animate-in">
+                        Know More →
                     </a>
                 </div>
             </div>
@@ -75,59 +80,35 @@
 
     </section>
 
-    <!-- About Section -->
-    <section class="about section">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-card animate-in">
 
-                    <h3>Our Mission</h3>
-                    <p>IKSH AI is a technology-driven startup focused on building practical AI-powered solutions for
-                        businesses. We design and develop intelligent tools that help organizations automate processes,
-                        improve operational efficiency, and enhance customer experiences.</p>
-                </div>
-                <div class="about-card animate-in">
-
-                    <h3>Our Approach</h3>
-                    <p>Our approach is centered on solving real business problems using scalable and easy-to-adopt AI
-                        solutions. We believe AI should be simple, reliable, and impactful—delivering measurable value
-                        without unnecessary complexity.</p>
-                </div>
-                <div class="about-card animate-in">
-
-                    <h3>Our Philosophy</h3>
-                    <p>We work closely with businesses to understand their unique challenges and deliver solutions that
-                        drive sustainable growth. Every tool we build is designed to be accessible, practical, and
-                        purpose-driven.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Transform Your Business?</h2>
-                <p>Let's discuss how IKSH AI can help you achieve your goals with practical AI solutions.</p>
-                <a href="services.html" class="btn btn-primary">EXPLORE SERVICES</a>
-            </div>
-        </div>
-    </section>
 
-    <!-- Bottom Left Branding (Fixed) -->
-    <a href="index.html" class="about-branding-text">
-        <img src="images/flag-white.gif" alt="IKSH AI Logo">
-        <span>IKSH AI</span>
-    </a>
 
-    <!-- Message Button (Fixed Bottom Right) -->
-    <a href="#" class="about-message-button" id="contactTrigger" aria-label="Contact us">
-        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
-    </a>
+    <!-- Services Button (Fixed Left Center) -->
+    <a href="services.html" class="services-button">SERVICES</a>
+
+    <!-- LinkedIn Button (Fixed Right Center) -->
+    <a href="https://www.linkedin.com/company/ikshai/" target="_blank" class="home-linkedin-button"
+        aria-label="Visit our LinkedIn page">in</a>
+
+    <!-- Footer Section -->
+    <footer class="home-footer">
+        <!-- Bottom Left Branding -->
+        <a href="index.html" class="about-branding-text">
+            <span>IKSH AI</span>
+        </a>
+
+        <!-- Footer Center Text -->
+        <span class="footer-center-text"
+            style="position: absolute; left: 50%; transform: translateX(-50%); color: var(--color-text-light); font-weight: 700; font-size: 1.2rem; letter-spacing: 1px; white-space: nowrap;">SOLUTION
+            WORTH RELYING ON</span>
+
+
+        <!-- Footer Right Phone -->
+        <span class="footer-right-text"
+            style="color: white; font-weight: 700; font-size: 1.2rem; letter-spacing: 1px;">911-1518-233</span>
+    </footer>
 
     <!-- Blur Overlay -->
     <div class="contact-overlay hidden" id="contactOverlay"></div>

@@ -203,11 +203,15 @@ console.log(
 
 function updateHeroDate() {
     const heroDate = document.getElementById('heroDate');
+    const navbarDate = document.getElementById('navbarDate');
     const dateCounter = document.getElementById('dateCounter');
 
-    if (heroDate || dateCounter) {
+    const navbarYear = document.getElementById('navbarYear');
+
+    if (heroDate || dateCounter || navbarDate || navbarYear) {
         const now = new Date();
-        const dayNumber = now.getDate();
+        const dayNumber = String(now.getDate()).padStart(2, '0');
+        const year = String(now.getFullYear()).slice(-2);
 
         // Update date display
         if (heroDate) {
@@ -217,6 +221,16 @@ function updateHeroDate() {
         // Update date counter
         if (dateCounter) {
             dateCounter.textContent = dayNumber;
+        }
+
+        // Update navbar date
+        if (navbarDate) {
+            navbarDate.textContent = dayNumber;
+        }
+
+        // Update navbar year
+        if (navbarYear) {
+            navbarYear.textContent = year;
         }
     }
 }
