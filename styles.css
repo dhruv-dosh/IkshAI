@@ -783,7 +783,7 @@ body {
 
 .motto-link {
     display: inline-block;
-    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-size: clamp(1rem, 2vw, 1.66rem);
     font-weight: 400;
     color: #ffffff;
     text-decoration: none;
@@ -844,13 +844,13 @@ body {
 }
 
 .motto-logo {
-    height: clamp(3rem, 5vw, 4rem);
+    height: clamp(2rem, 3.33vw, 2.66rem);
     width: auto;
     filter: brightness(0) invert(1) drop-shadow(0 2px 10px rgba(0, 0, 0, 0.5));
 }
 
 .motto-text {
-    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    font-size: clamp(1rem, 2vw, 1.66rem);
     font-weight: 600;
     color: #ffffff;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
@@ -865,7 +865,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    font-size: clamp(0.75rem, 1.33vw, 1rem);
     font-weight: 400;
     color: rgba(255, 255, 255, 0.8);
     letter-spacing: 0.2em;
@@ -883,7 +883,7 @@ body {
     position: fixed;
     right: 3rem;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%) scale(0.67);
     z-index: 1000;
     color: #ffffff;
     text-decoration: none;
@@ -900,7 +900,7 @@ body {
 }
 
 .message-button:hover {
-    transform: translateY(-50%) scale(1.15);
+    transform: translateY(-50%) scale(0.77);
     opacity: 1;
 }
 
@@ -909,7 +909,7 @@ body {
 }
 
 .message-button:active {
-    transform: translateY(-50%) scale(0.95);
+    transform: translateY(-50%) scale(0.6);
 }
 
 /* LinkedIn Button - Right Center */
@@ -920,7 +920,7 @@ body {
     transform: translateY(-50%);
     z-index: 1000;
     color: #ffffff;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
@@ -1629,30 +1629,51 @@ body {
 
 @media (max-width: 1180px) {
 
-    /* Hero Responsive Fixes */
-    /* Hero Responsive Fixes - Clean Layout */
+    /* Hero Responsive Fixes - Laptop/Tablet */
+    .hero-branding,
+    .hero-phone {
+        bottom: 2rem;
+        /* Move up slightly */
+    }
+
+    .corner-counter {
+        top: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Hero - Mobile */
     .hero-branding,
     .hero-phone,
     .corner-counter,
+    .hero-tagline {
+        display: none !important;
+        /* Hide on mobile for clean look */
+    }
+
     .message-button,
     .linkedin-button {
         display: none !important;
-    }
-
-    .index-nav .mobile-toggle {
-        display: none !important;
+        /* Hide side buttons on mobile */
     }
 
     .hero-motto .motto-logo {
-        height: 2.5rem;
+        height: 2rem;
     }
 
     .hero-motto .motto-text {
-        font-size: 1.25rem;
+        font-size: 1rem;
     }
 
-    .hero-tagline {
-        display: none !important;
+    /* Adjust Motto Title for Mobile */
+    .motto-title {
+        font-size: clamp(1.5rem, 6vw, 2.5rem);
+        margin-bottom: 2rem;
+    }
+
+    .motto-link {
+        font-size: 1.25rem;
     }
 
     /* Copyright Footer */
