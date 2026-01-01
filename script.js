@@ -299,6 +299,8 @@ if (contactForm) {
 // ============================================
 // Magnifying Glass Effect for About Page
 // ============================================
+// Magnifying Glass Effect - DISABLED
+/*
 document.addEventListener('DOMContentLoaded', () => {
     // Only run on About page
     const aboutSection = document.querySelector('.about-hero');
@@ -387,6 +389,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+*/
 // document.addEventListener('DOMContentLoaded', () => {
 //     // Only run on About page - check if we're on about.html
 //     const isAboutPage = window.location.pathname.endsWith('about.html');
@@ -500,6 +503,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     // Only run on Index page
     const isIndexPage = window.location.pathname.endsWith('index.html') ||
+        window.location.pathname.endsWith('home.html') ||
         window.location.pathname === '/' ||
         window.location.pathname.endsWith('/');
 

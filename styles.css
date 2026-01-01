@@ -1585,7 +1585,7 @@ body {
     transition: opacity 0.3s ease, transform 0.3s ease, left 0.1s ease-out, top 0.1s ease-out;
     pointer-events: none;
     z-index: 9999;
-    padding: 12px 20px;
+    padding: 8px 16px;
     background: rgba(20, 20, 20, 0.3);
     /* More transparent */
     border-radius: 8px;
@@ -1597,10 +1597,10 @@ body {
 .connect-content {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     color: white;
     font-family: 'Courier New', monospace;
-    font-size: 40px;
+    font-size: 24px;
     font-weight: bold;
     letter-spacing: 1px;
 }
