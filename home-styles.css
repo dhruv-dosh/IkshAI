@@ -16,7 +16,7 @@
 }
 
 /* Hide standard nav links on desktop for Home page due to custom layout */
-@media (min-width: 769px) {
+@media (min-width: 1025px) {
     .nav-links {
         display: none;
     }
@@ -301,10 +301,9 @@
     -webkit-backdrop-filter: blur(8px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
     .about-branding-text,
-    .about-message-button,
     .footer-right-text,
     .services-button,
     .home-linkedin-button {
@@ -336,7 +335,8 @@
     }
 
     #navbarDate,
-    #navbarYear {
+    #navbarYear,
+    .desktop-only-text {
         display: none !important;
     }
 }

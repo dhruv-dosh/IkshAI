@@ -1393,7 +1393,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .navbar {
         top: 1rem;
         width: 95%;
@@ -1641,7 +1641,7 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
     /* Hero - Mobile */
     .hero-branding,

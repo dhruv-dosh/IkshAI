@@ -189,7 +189,7 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .service-item {
         min-width: 320px;
         max-width: 350px;

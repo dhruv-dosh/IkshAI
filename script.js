@@ -610,10 +610,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if (contactOverlay) contactOverlay.classList.remove('hidden');
         };
 
-        // Trigger 1: Bottom Right Button (or Center Left on Index)
-        if (contactTrigger) {
-            contactTrigger.addEventListener('click', openPopup);
-        }
+        // Trigger 1: All elements with class 'about-message-button' or ID 'contactTrigger'
+        const triggers = document.querySelectorAll('.about-message-button, #contactTrigger');
+        triggers.forEach(trigger => {
+            trigger.addEventListener('click', openPopup);
+        });
 
         // Trigger 2: Navbar Link
         if (navContactLink) {
@@ -666,8 +667,8 @@ document.addEventListener('DOMContentLoaded', () => {
             observer.observe(item);
         });
 
-        // Default to second card on load
-        if (serviceItems.length > 1) {
+        // Default to second card on load - ONLY ON SERVICES PAGE
+        if (serviceItems.length > 1 && window.location.pathname.includes('services.html')) {
             setTimeout(() => {
                 serviceItems[1].scrollIntoView({
                     behavior: 'smooth',

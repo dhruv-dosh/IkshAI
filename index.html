@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="home-styles.css">
     <link rel="stylesheet" href="contact-styles.css">
     <style>
-        @media (min-width: 769px) {
+        @media (min-width: 1025px) {
             .mobile-scroll-content {
                 display: none !important;
             }
@@ -160,7 +160,16 @@
         </section>
 
         <!-- Services Section Content (From services.html) -->
-        <div class="service-scroll-container">
+        <div class="container" style="margin-top: 6rem; margin-bottom: 0.5rem;">
+            <div class="about-hero-content" style="text-align: center;">
+                <span class="section-label animate-in" style="color: rgba(255,255,255,0.6); letter-spacing: 0.2em;">WHAT
+                    WE PROVIDE</span>
+                <h1 class="about-hero-title animate-in" style="margin-top: 1rem; margin-bottom: 0; font-weight: 600;">
+                    Intelligent Solutions<br>for Modern Business.
+                </h1>
+            </div>
+        </div>
+        <div class="service-scroll-container" style="height: auto; padding-top: 1rem; padding-bottom: 4rem;">
             <!-- Spacer for center alignment start -->
             <div class="scroll-spacer"></div>
 
@@ -201,6 +210,10 @@
             <!-- Spacer for center alignment end -->
             <div class="scroll-spacer"></div>
         </div>
+
+        <div style="text-align: center; color: rgba(255, 255, 255, 0.4); padding: 2rem 0; font-size: 0.8rem;">
+            &copy; 2025 IKSH AI. All rights reserved.
+        </div>
     </div>
 
 
@@ -215,6 +228,16 @@
     <a href="https://www.linkedin.com/company/ikshai/" target="_blank" class="home-linkedin-button"
         aria-label="Visit our LinkedIn page">in</a>
 
+    <!-- Message Button (Fixed Bottom Right) -->
+    <a href="#" class="about-message-button" id="contactTrigger" aria-label="Contact us"
+        style="z-index: 99999; gap: 0.5rem;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+        <span class="desktop-only-text" style="font-weight: 700; font-size: 1rem;">911-1518-233</span>
+    </a>
+
     <!-- Footer Section -->
     <footer class="home-footer">
         <!-- Bottom Left Branding -->
@@ -228,9 +251,6 @@
             WORTH RELYING ON</span>
 
 
-        <!-- Footer Right Phone -->
-        <span class="footer-right-text"
-            style="color: white; font-weight: 700; font-size: 0.8rem; letter-spacing: 1px;">911-1518-233</span>
     </footer>
 
     <!-- Blur Overlay -->

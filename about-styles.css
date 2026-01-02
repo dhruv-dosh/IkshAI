@@ -294,10 +294,9 @@
     -webkit-backdrop-filter: blur(8px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
-    .about-branding-text,
-    .about-message-button {
+    .about-branding-text {
         display: none !important;
     }
 
