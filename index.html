@@ -12,8 +12,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="about-styles.css">
+    <link rel="stylesheet" href="service-style.css">
     <link rel="stylesheet" href="home-styles.css">
     <link rel="stylesheet" href="contact-styles.css">
+    <style>
+        @media (min-width: 769px) {
+            .mobile-scroll-content {
+                display: none !important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -85,6 +94,114 @@
         </div>
 
     </section>
+
+    <!-- Mobile Only Expanded Content -->
+    <div class="mobile-scroll-content">
+        <!-- About Section Content (From about.html) -->
+        <section class="about-hero">
+            <div class="container">
+                <div class="about-hero-content">
+                    <span class="section-label animate-in">WHO WE ARE</span>
+                    <h1 class="about-hero-title animate-in">We Help You <br>Achieve More.</h1>
+                    <p class="about-hero-intro animate-in">
+                        IKSH AI is a technology driven startup building practical, easy to adopt AI solutions for
+                        businesses. We help organizations automate workflows, boost efficiency, and improve customer
+                        experiences. Starting with AI powered customer support, our vision is to expand into a full
+                        suite of
+                        AI tools across operations, sales, and customer engagement delivering simple, reliable, and
+                        measurable business impact.
+                    </p>
+                    <div style="margin-top: 2rem;">
+                        <a href="services.html" class="motto-link animate-in">
+                            Explore Services →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-card animate-in">
+                        <h3>Our Mission</h3>
+                        <p>IKSH AI is a technology-driven startup focused on building practical AI-powered solutions for
+                            businesses. We design and develop intelligent tools that help organizations automate
+                            processes,
+                            improve operational efficiency, and enhance customer experiences.</p>
+                    </div>
+                    <div class="about-card animate-in">
+                        <h3>Our Approach</h3>
+                        <p>Our approach is centered on solving real business problems using scalable and easy-to-adopt
+                            AI
+                            solutions. We believe AI should be simple, reliable, and impactful—delivering measurable
+                            value
+                            without unnecessary complexity.</p>
+                    </div>
+                    <div class="about-card animate-in">
+                        <h3>Our Philosophy</h3>
+                        <p>We work closely with businesses to understand their unique challenges and deliver solutions
+                            that
+                            drive sustainable growth. Every tool we build is designed to be accessible, practical, and
+                            purpose-driven.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Transform Your Business?</h2>
+                    <p>Let's discuss how IKSH AI can help you achieve your goals with practical AI solutions.</p>
+                    <a href="services.html" class="btn btn-primary">EXPLORE SERVICES</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section Content (From services.html) -->
+        <div class="service-scroll-container">
+            <!-- Spacer for center alignment start -->
+            <div class="scroll-spacer"></div>
+
+            <div class="service-item">
+                <div class="service-content">
+                    <h2>AI Powered Customer Support</h2>
+                    <p>We provide AI-powered customer support solutions that handle customer queries instantly, reduce
+                        response time, and ensure consistent, high-quality support across digital channels.</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-content">
+                    <h2>AI-Based Appointment Scheduling</h2>
+                    <p>Our AI-driven appointment scheduling solutions automate bookings, confirmations, and
+                        rescheduling,
+                        helping businesses manage appointments efficiently while improving customer convenience.</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-content">
+                    <h2>AI-Integrated Custom Software</h2>
+                    <p>We develop custom software solutions integrated with AI to automate workflows, enhance
+                        decision-making, and solve specific business challenges through intelligent applications.</p>
+                </div>
+            </div>
+
+            <div class="service-item">
+                <div class="service-content">
+                    <h2>AI-Powered Chatbots</h2>
+                    <p>We provide AI-powered Chatbot solutions that handle customer queries instantly, reduce response
+                        time,
+                        and ensure consistent, high-quality support across digital channels.</p>
+                </div>
+            </div>
+
+            <!-- Spacer for center alignment end -->
+            <div class="scroll-spacer"></div>
+        </div>
+    </div>
 
 
 
